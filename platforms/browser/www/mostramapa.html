@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">     
+        <div class="list-block">
+            <ul>
+                <li>
+                <a href="seguiment.html" class="item-link list-button">Seguiment</a>
+                <!--<p>Left panel content goes here</p>-->
+                </li>
+                <li>
+                <a href="index.html" class="item-link list-button">Inici</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+        <div class="content-block">
+            <p></p>
+        </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class-->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We have home navbar without left link-->
+                    <div class="center sliding">
+                        <img src="img/logogranadaptatbo.jpg" style='width:100%;' alt="Easy Route">
+                    </div>
+                    <div class="right">
+                        <!-- Right link contains only icon - additional "icon-only" class-->
+                        <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, data-page contains page name-->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="content-block-title">MAPA</div>
+                        <!-- <div class="content-block"> -->
+                        <div class="content-block-inner">
+                            <div class="list-block">
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <!-- INSEREIX AQUI EL MAPA -->
+                                                Borra aquest zurullo de linia i fica el mapa aqui
+                                            </div>
+                                        </li>
+                                    
+                                    </ul>
+                            </div>
+                        </div>
+
+                        <div class="list-block">
+                                <ul>
+                                    <li><a href="best.html" class="button button-big button-fill color-blue">Retorna a les altres opcions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
